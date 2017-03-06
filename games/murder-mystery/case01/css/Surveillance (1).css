@@ -1,0 +1,71 @@
+
+/*
+table {
+    background-image: url("../images/oldpaper.jpg");
+    background-repeat:no-repeat;
+}
+*/
+
+body{
+  background-image: url("../images/tv-wall2.jpg");
+  background-size: contain;
+}
+
+#tv_container {
+    zoom: 1.25;
+    background: url('../images/TV3.png') no-repeat top left transparent;
+    background-size: 100% 100%;
+    width: 400px; /* Adjust TV image width */
+    height: 300px; /* Adjust TV image height */
+    position: relative;
+
+    margin: 0 auto;  //center video
+    text-align: left;
+
+    box-shadow: 15px 15px 10px rgba(50,50,50,0.7); //shadow
+
+}
+#tv_container video {
+    position: absolute;
+    top: 30px; /* Adjust top position */
+    left: 40px; /* Adjust left position */
+    z-index: -100;
+}
+
+
+
+/*
+#tv_container {
+    background: url('../images/tv2.png') no-repeat top left transparent;
+    background-size: 100% 100%;
+    width: 500px; 
+    height: 320px; 
+    position: relative;
+}
+#tv_container video {
+    position: absolute;
+    top: 40px; 
+    left: 50px; 
+    z-index: -100;
+}
+*/
+
+
+
+/* Courier New */
+
+/*http://www.w3schools.com/css/css3_shadows.asp*/
+h1 {
+    background-color: #2f2f2f;  
+    font-family: "Courier New";
+    font-size: 3em;
+    color: white;
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px red;
+  }
+
+

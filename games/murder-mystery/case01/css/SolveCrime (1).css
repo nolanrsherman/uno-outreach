@@ -1,0 +1,103 @@
+
+/*
+table {
+    background-image: url("../images/oldpaper.jpg");
+    background-repeat:no-repeat;
+}
+*/
+
+body{
+  background-color: lightgray;
+}
+
+
+/*http://www.w3schools.com/css/css3_shadows.asp*/
+h1{
+    background-color: #2f2f2f;  
+    font-family: "Courier New";
+    font-size: 3em;
+    color: white;
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px red;
+  }
+
+
+h2 {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+  color: darkblue;
+  text-align: center;
+  background-color: darkgray;
+
+}
+
+h3 {
+font-family: "Arial Black", Gadget, sans-serif;
+font-weight: bolder;
+font-size: 35px;
+margin-bottom: 0px;
+}
+
+
+h4 {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 18px;
+  color: purple;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+img {
+    float: left;
+    padding-right: 20px;
+}
+
+#arrest-warrant{
+  border-style: solid;
+  border-width: 2px;
+  border-color: gray;
+  border-radius: 20px;
+  overflow:hidden;
+  background-color: white;//rgb(230,230,230);
+  padding: 20px;
+  padding-top: 0px;
+}
+
+/*
+table, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 18px;
+  background-color: white;
+}
+*/
+input {
+    height: 30px;
+    border: 2px solid black;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+input[type=button]{
+  height: 35px;
+}
+
+input[type=text]:hover {
+    border: 2px solid green;
+    background-color: rgba(0,255,0,0.1);
+}
+
+input[type=button]:hover{
+  background-color: green;
+  color: white;
+}

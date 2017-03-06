@@ -1,0 +1,57 @@
+
+/*
+table {
+    background-image: url("../images/oldpaper.jpg");
+    background-repeat:no-repeat;
+}
+*/
+
+body{
+  background-image: url("../images/yellow-notebook.jpg");
+  background-size: cover;
+}
+
+
+/*http://www.w3schools.com/css/css3_shadows.asp*/
+h1{
+    background-color: #2f2f2f;  
+    font-family: "Courier New";
+    font-size: 3em;
+    color: white;
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px red;
+  }
+
+
+h4 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+dl {
+  font-family: 'Permanent Marker', cursive;
+  margin-left: 18%;
+}
+
+dt a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    list-style-type: none;
+}
+
+dt a:hover{
+    color: blue;
+}
+
+dd{
+  font-size: 20px;
+}
+
+

@@ -1,0 +1,29 @@
+nav {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-family: "Courier New";
+    font-weight: bolder;
+    margin: 0;
+    padding: 14px 16px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav a:hover {
+    background-color: red;
+}
+
+nav a:active {
+    background-color: darkred;
+}

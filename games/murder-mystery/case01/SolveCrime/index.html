@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<style>
+	.navbar-nav :hover {
+	    background-color: green !important;
+	    /*color: black !important;*/
+	}	
+	</style>
+</head>
+
+
+<!--
+Resources:
+http://www.plus2net.com/html_tutorial/button-linking.php
+http://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
+http://www.w3schools.com/html/html_forms.asp
+-->
+<body class="bg-inverse text-white">
+
+<nav class="navbar navbar-toggleable-sm navbar-light bg-success">
+
+  <button class="navbar-toggler navbar-toggler-right" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+
+  	<span class="navbar-toggler-icon"></span>
+  </button>
+
+  <a href="../../index.html" role="button" class="navbar-brand"> 
+    <i class="fa fa-home fa-2x"></i> 
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- <ul class="navbar-nav ml-auto nav-tabs"> -->
+    <!-- <ul class="navbar-nav nav-tabs">  -->
+    <ul class="nav nav-pills nav-fill container navbar-nav"> 
+	  <li class="nav-item">
+	    <!--<a class="nav-link active font-weight-bold bg-inverse text-white" href="#">Story Setup</a>-->
+	    <a class="nav-link text-white" href="../index.html">Story Setup</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-white" href="../Interview/index.html">Interview Witnesses</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-white" href="../InspectRoom/index.html">Inspect Rooms</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-white" href="../Casefiles/index.html">View Casefiles</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-white active bg-inverse" href="../SolveCrime/index.html">Solve Crime</a>
+	  </li>
+    </ul>
+  </div>
+
+</nav>
+
+<div class="container mt-4">
+
+<h1 class="display-4 text-center">
+	Solve the Crime
+	<hr style="background-color:white"> 
+</h1>
+
+<div class="card card-info">
+	<h2 class="card-header text-center bg-primary">Arrest Warrent</h2>
+
+	<div class="list-inline">
+		<img src="../images/Police_Logo.png" class="col-sm-4 list-inline-item">
+
+		<!--
+		<h2 class="col-sm-7 list-inline-item text-center">Arrest Warrent</h2>
+		-->
+
+		<div class="list-inline-item col-sm-7">
+
+			<div class="form-group ">
+			  <label for="suspect">Select Suspect:</label>
+			  <select class="form-control" id="suspect">
+			  	<option selected>Choose...</option>
+			    <option>Jon Grimm</option>
+			    <option>Chris Williams</option>
+			    <option>Lily Stricklin</option>
+			    <option>Chris Kives</option>
+			  </select>
+			</div>
+
+			<div class="form-group ">
+			  <label for="evidence">Select Evidence:</label>
+			  <select class="form-control" id="evidence">
+			  	<option selected>Choose...</option>
+			  	<option>Bed</option>
+			  	<option>Bowl</option>
+			  	<option>Clock</option>
+			  	<option>Chairs</option>
+			  	<option>Dishwasher</option>
+			  	<option>Eggs</option>
+			  	<option>Flowerbox</option>
+			  	<option>Fridge</option>
+			  	<option>Garden Trashcan</option>
+			  	<option>Kitchen Trashcan</option>
+			  	<option>Microwave</option>
+			  	<option>Oven Mitts</option>
+			  	<option>Paper Towels</option>
+			  	<option>Sink</option>
+			    <option>Soap</option>
+			    <option>Tissues</option>
+			    <option>Toilet</option>
+			    <option>Towel</option>
+			    <option>Tub</option>
+			    <option>TV</option>
+			    <option>Watering Can</option>
+			    <option>Wheelbarrow</option>
+			  </select>
+			</div>
+
+			<button 
+				type="button" 
+				class="btn btn-primary pull-right mb-3"
+				onClick="if (suspect.value === 'Lily Stricklin' && evidence.value == 'Eggs') parent.location='../Gameover/win.html'; else parent.location='../Gameover/lost.html';">
+				Submit
+			</button>
+
+
+		</div>
+
+
+	</div>
+
+</div>
+
+<!--
+
+<img src="../images/Police_Logo.png" width="250">
+
+
+<h2>Police Database</h2>
+<h3>Arrest Warrant</h3>
+<div id="arrest-warrant">
+
+<h4> Case 001: Murder of Mr. X</h4>
+<p> <em>Issue Arrest Warrant for Suspect & Close this Case.</em></p>
+
+
+<form>
+  <input type="text" name="killer" placeholder="Enter Suspect's name">
+  <input type=button onClick="if (killer.value === 'Tom') parent.location='../Gameover/win.html'; else parent.location='../Gameover/lost.html';" value='submit'>
+</form>
+</div>
+
+-->
+
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+<!-- Refactor ths page such that it uses a form
+player fills in name of killer
+thans submits
+it attampts t0 go to URL with killer name
+if correct then you arrest him
+else fails
+
+
+Also refactor aestetic to mirror arrest warrent in police computer and use notebook paper for casefiles-->

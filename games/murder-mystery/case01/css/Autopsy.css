@@ -1,0 +1,65 @@
+
+/*
+table {
+    background-image: url("../images/oldpaper.jpg");
+    background-repeat:no-repeat;
+}
+*/
+
+body {  
+
+}
+
+body{
+  background-image: url("../images/autopsy_texture.jpg");
+  //background-repeat: repeat-y;
+  background-size: cover;
+}
+
+img{
+   opacity:.5;
+}
+
+
+
+td:hover {
+  background-color: #f5f5f5;
+}
+
+/*http://www.w3schools.com/css/css3_shadows.asp*/
+/*http://stackoverflow.com/questions/1891857/how-do-you-stretch-an-image-to-fill-a-div-while-keeping-the-images-aspect-rat*/
+table {;
+  background-image: url("../images/oldpaper.jpg");
+  font-family: "Lucida Sans Typewriter"; 
+  padding: 6px;
+  border: 2px solid black;
+  box-shadow: 10px 10px 5px rgba(50,50,50,0.7);
+
+    //zoom: 2;  //increase if you have very small images
+
+    display: block;
+    margin: auto;
+
+    height: auto;
+    max-height: 100%;
+
+    width: auto;
+    max-width: 100%;
+}
+/* Courier New */
+
+/*http://www.w3schools.com/css/css3_shadows.asp*/
+h1 {
+    background-color: #2f2f2f;  
+    font-family: "Courier New";
+    font-size: 3em;
+    color: white;
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px red;
+  }
+
+

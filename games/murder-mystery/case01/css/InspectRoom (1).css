@@ -1,0 +1,69 @@
+
+/*
+table {
+    background-image: url("../images/oldpaper.jpg");
+    background-repeat:no-repeat;
+}
+*/
+
+body{
+}
+
+
+/*http://www.w3schools.com/css/css3_shadows.asp*/
+h1{
+    background-color: #2f2f2f;  
+    font-family: "Courier New";
+    font-size: 3em;
+    color: white;
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px red;
+  }
+
+
+h2 {
+  text-align: center;
+  //font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Bangers", cursive;
+  font-size: 36px;
+  color: yellow;
+  padding:0;
+  margin: 0;
+  -webkit-text-stroke-width: 1px; /*outlines the text*/
+  -webkit-text-stroke-color: black; /*outlines the text*/
+}
+
+iframe{
+  width: 100%;
+  //height: 300px;
+  border:2px solid rgba(0,0,0,1);
+  //border:3px solid rgba(0,0,0,1);
+  //border-radius: 20px !important;
+  background-color: white;
+}
+
+
+.columns2 {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+div{
+  text-align: center;
+}
+
+/*
+iframe,
+object,
+embed{
+    border:3px solid rgba(0,0,0,1);
+    -webkit-border-radius: 20px !important; 
+    -ms-border-radius: 20px !important; 
+    -o-border-radius: 20px !important;  
+    border-radius: 20px !important;     
+}*/

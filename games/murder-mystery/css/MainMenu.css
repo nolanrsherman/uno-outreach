@@ -1,0 +1,31 @@
+
+/*
+table {
+    background-image: url("../images/oldpaper.jpg");
+    background-repeat:no-repeat;
+}
+*/
+
+
+/*
+body{
+  background-color: black;
+  color: white;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}*/
+
+h1, h1#main-title{
+  font-family: "Courier New";
+  /*font-size: 5vw;*/
+  font-size: 3em;
+}
+
+hr {
+    height: 2px;
+    background-color:#fff;
+    /*margin-top: 20px;
+    margin-bottom: 20px;*/
+}
+
+
+

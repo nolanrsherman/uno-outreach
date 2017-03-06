@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<style>
+	.navbar-nav :hover {
+	    background-color: green !important;
+	    /*color: black !important;*/
+	}	
+	</style>
+</head>
+
+<body class="bg-inverse text-white">
+
+<nav class="navbar navbar-toggleable-sm navbar-light bg-success">
+
+  <button class="navbar-toggler navbar-toggler-right" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+
+  	<span class="navbar-toggler-icon"></span>
+  </button>
+
+  <a href="../../index.html" role="button" class="navbar-brand"> 
+    <i class="fa fa-home fa-2x"></i> 
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- <ul class="navbar-nav ml-auto nav-tabs"> -->
+    <!-- <ul class="navbar-nav nav-tabs">  -->
+    <ul class="nav nav-pills nav-fill container navbar-nav"> 
+	  <li class="nav-item">
+	    <!--<a class="nav-link active font-weight-bold bg-inverse text-white" href="#">Story Setup</a>-->
+	    <a class="nav-link text-white" href="../index.html">Story Setup</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-white" href="../Interview/index.html">Interview Witnesses</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-white" href="../InspectRoom/index.html">Inspect Rooms</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-white active bg-inverse" href="../Casefiles/index.html">View Casefiles</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-white" href="../SolveCrime/index.html">Solve Crime</a>
+	  </li>
+    </ul>
+  </div>
+
+</nav>
+
+
+<div class="container mt-4">
+	<h1 class="display-4 text-center">
+		Autopsy Report
+		<hr style="background-color:white"> 
+	</h1>
+
+<!--
+<table class="table table-striped table-inverse">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+-->
+
+
+<table class="table bg-faded">
+  <thead>
+    <tr class="bg-info">
+      <th class="text-center" colspan="3">
+      	<img width="75px"  src="../images/casefiles-coroner-logo.png" />
+      	<h4 class="text-white">Coroner Report</h4>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+    <td>
+  	  <table class="table table-striped bg-faded text-muted table-bordered">
+	    <tr>
+	      <th scope="row" class="text-center" >Name</th>
+	      <td >Billy Bayou</td>
+	    </tr>
+
+	    <tr>
+	      <th scope="row" class="text-center" >Age</th>
+	      <td>35</td>
+	    </tr>
+
+	    <tr>
+	      <th scope="row" class="text-center" >Sex</th>
+	      <td>Male</td>
+	    </tr>
+
+	    <tr>
+	      <th class="text-center">Cause of Death:</th>
+	      <td>Stab wound to the back.</td>
+	    </tr>
+
+	    <tr>
+	      <th class="text-center">Conclusion:</th>
+	      <td class="text-danger">Homicide</td>
+	    </tr>
+
+	  </table>
+	 </td>
+	 <td>
+	 	<img class="img-fluid"  width="300px" src="../images/casefiles-coroner-diagram.png"/>
+	 </td>
+	</tr>
+
+
+  </tbody>
+</table>
+
+
+
+
+<div class="card">
+	<div class="card-header bg-info text-center">
+    	<img width="75px"  src="../images/casefiles-coroner-logo.png" />
+      	<h4 class="text-white">Coroner Report</h4>
+  	</div>
+
+  	<div class="card-block">
+  		<div class="row">
+	  		<div class="col-12 col-sm-6 text-primary">
+	  			<table class="table table-striped bg-faded text-muted table-bordered">
+				    <tr>
+				      <th scope="row" class="text-center" >Name</th>
+				      <td >Billy Bayou</td>
+				    </tr>
+
+				    <tr>
+				      <th scope="row" class="text-center" >Age</th>
+				      <td>35</td>
+				    </tr>
+
+				    <tr>
+				      <th scope="row" class="text-center" >Sex</th>
+				      <td>Male</td>
+				    </tr>
+
+				    <tr>
+				      <th class="text-center">Cause of Death:</th>
+				      <td>Stab wound to the back.</td>
+				    </tr>
+
+				    <tr>
+				      <th class="text-center">Conclusion:</th>
+				      <td class="text-danger">Homicide</td>
+				    </tr>
+
+				</table>
+	  		</div>
+	  		<div class="col-12 col-sm-6 text-muted">
+	  			<img class="img-fluid"  src="../images/casefiles-coroner-diagram.png"/>
+	  		</div>
+	  	</div>
+  	</div>
+</div>
+
+
+
+
+
+
+<table class="table bg-faded">
+  <thead>
+    <tr class="bg-info">
+      <th class="text-center" colspan="3">
+      	<img width="75px"  src="../images/casefiles-coroner-logo.png" />
+      	<h4 class="text-white">Coroner Report</h4>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+    <td>
+  	  <table class="table table-striped bg-faded text-muted table-bordered">
+	    <tr>
+	      <th scope="row" class="text-center" >Name</th>
+	      <td >Billy Bayou</td>
+	    </tr>
+
+	    <tr>
+	      <th scope="row" class="text-center" >Age</th>
+	      <td>35</td>
+	    </tr>
+
+	    <tr>
+	      <th scope="row" class="text-center" >Sex</th>
+	      <td>Male</td>
+	    </tr>
+
+	    <tr>
+	      <th class="text-center">Cause of Death:</th>
+	      <td>Stab wound to the back.</td>
+	    </tr>
+	  </table>
+	 </td>
+	 <td>
+	 	<table class="table table-striped bg-faded text-muted">
+	 		<tr class="text-center">
+	 			<td rowspan="4" > <img class="img-fluid"  width="300px" src="../images/casefiles-coroner-diagram.png"/></td>
+	 		</tr>
+	 	</table>
+	 </td>
+	</tr>
+
+
+  </tbody>
+</table>
+
+
+
+
+<table class="table table-striped bg-faded text-muted table-bordered">
+  <thead>
+    <tr class="bg-info">
+      <th class="text-center" colspan="3">
+      	<img width="75px"  src="../images/casefiles-coroner-logo.png" />
+      	<h4 class="text-white">Coroner Report</h4>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <th scope="row" class="text-center" >Name</th>
+      <td >Billy Bayou</td>
+      <td rowspan="4" > <img class="float-right img-thumbnail"  width="300px" src="../images/casefiles-coroner-diagram.png"/></td>
+    </tr>
+
+    <tr>
+      <th scope="row" class="text-center" >Age</th>
+      <td>35</td>
+    </tr>
+
+    <tr>
+      <th scope="row" class="text-center" >Sex</th>
+      <td>Male</td>
+    </tr>
+
+    <tr>
+      <th class="text-center">Cause of Death:</th>
+      <td>Stab wound to the back.</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<!-- START (Feb 06 2017) -->
+<!--
+<table class= "table  ">
+    <tbody>
+
+      <tr>
+        <td class="text-center">Name:</td>
+        <td>Billy Bayou</td>
+      </tr>
+
+      <tr>
+        <td class="text-center">Age:</td>
+        <td>35</td>
+      </tr>
+
+      <tr>
+        <td class="text-center">Cause of Death:</td>
+        <td>Stab wound in the back.</td>
+      </tr>
+
+   </tbody>
+</table> 
+-->
+<!-- END (Feb 06 2017)-->
+
+<!--
+<table class="table table-striped bg-faded text-muted">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+-->
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
