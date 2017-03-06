@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="game.js"></script>
+
+    <title>Bootstrap 101 Template</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    body{
+          background-color: #333333;
+          color:white;
+          padding: 40px;
+    }
+      .center{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #main {
+        width: 100%;
+      }
+      #game-wrapper {
+          /* background-color: black; */
+          /* background-size: cover; */
+          height: 510px;
+          width: 900px;
+          position: relative;
+          background: url(countdown-machine.gif);
+          background-size: contain;
+          margin: auto;
+      }
+      #led-wrapper{
+        position: absolute;
+        left: 368px;
+        top: 200px;
+      }
+      .led{
+        height: 60px;
+      }
+      #up-wrapper{
+        position: absolute;
+        left: 365px;
+        top: 165px;
+        color:red;
+      }
+      #down-wrapper{
+        position: absolute;
+        left: 364px;
+        top: 253px;
+        color:red;
+      }
+      .arrow{
+        font-size: 30px;
+        margin: 5px;
+      }
+      #disarm{
+        position: absolute;
+        left: 383px;
+        top: 308px;
+      }
+      #clock{
+        color:white;
+        position: absolute;
+        left: 480px;
+        top: 369px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="main" class="center container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h1>Guess the Code before Time Runs Out!</h1>
+          <div id="game-wrapper">
+            <p id="clock">60</p>
+            <div id="up-wrapper">
+              <span onmouseup="changeDigit(1,1)" class="arrow glyphicon glyphicon-triangle-top"></span>
+              <span onmouseup="changeDigit(2,1)" class="arrow glyphicon glyphicon-triangle-top"></span>
+              <span onmouseup="changeDigit(3,1)" class="arrow glyphicon glyphicon-triangle-top"></span>
+            </div>
+            <div id="led-wrapper">
+              <img class="led" id="input1" value="0" src="led/0.png">
+              <img class="led" id="input2" value="0" src="led/0.png">
+              <img class="led" id="input3" value="0" src="led/0.png">
+            </div>
+            <div id="down-wrapper">
+              <span onmouseup="changeDigit(1,-1)" class="arrow glyphicon glyphicon-triangle-bottom"></span>
+              <span onmouseup="changeDigit(2,-1)" class="arrow glyphicon glyphicon-triangle-bottom"></span>
+              <span onmouseup="changeDigit(3,-1)" class="arrow glyphicon glyphicon-triangle-bottom"></span>
+            </div>
+            <button id="disarm" type="button" class="btn btn-default" onclick="disarm()">Disarm</button>
+          </div>
+        </div>
+  </div>
+</div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  </body>
+</html>
